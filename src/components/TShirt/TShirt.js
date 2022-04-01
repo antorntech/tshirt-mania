@@ -1,3 +1,5 @@
+import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./TShirt.css";
 
@@ -8,8 +10,9 @@ const TShirt = (props) => {
       <img src={picture} alt="" />
       <h4>{name}</h4>
       <p>Price: $ {price}</p>
-      <button>
+      <button className="cart-btn">
         <p>Add To Cart</p>
+        <FontAwesomeIcon icon={faCartArrowDown}></FontAwesomeIcon>
       </button>
     </div>
   );

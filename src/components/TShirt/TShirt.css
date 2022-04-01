@@ -1,8 +1,27 @@
 .t-shirt {
-  height: 450px;
+  height: 470px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .t-shirt img {
   height: 300px;
+}
+
+.cart-btn {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid black;
+  transition: 0.4s;
+}
+
+.cart-btn:hover {
+  background-color: black;
+  color: white;
 }
