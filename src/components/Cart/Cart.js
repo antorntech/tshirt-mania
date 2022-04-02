@@ -1,10 +1,22 @@
 import React from "react";
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = ({ cart, removeCartItem }) => {
+  // add conditional rendering
+  let command;
+  if (cart.length === 0) {
+    command = "Please add your item!!!";
+  }
   return (
     <div>
-      <h2>This is Cart.</h2>
+      <h3>Item Selected: {cart.length}</h3>
+      {command}
+      {cart.map((tshirt) => (
+        <p>
+          {tshirt.name}
+          <button onClick={() => removeCartItem(tshirt)}>X</button>
+        </p>
+      ))}
     </div>
   );
 };

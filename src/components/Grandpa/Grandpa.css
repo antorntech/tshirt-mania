@@ -1,0 +1,7 @@
+.grandpa,
+.grandpa div {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
